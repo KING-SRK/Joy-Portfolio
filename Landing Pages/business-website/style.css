@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(images/main-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links{
+    display: flex;
+}
+
+ul li{
+    margin-left: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    color: aqua;
+}
+
+.card{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 40px;
+    width: 700px;
+    border-radius: 1rem;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.card h1{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card p{
+    font-size: 18px;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.icon{
+    font-size: 1.5rem;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .card{
+        width: 400px;
+    }
+}
+
+@media (max-width: 466px) {
+    .card{
+        width: 300px;
+    }
+}
+
+@media (max-width: 636px) {
+    nav .nav-links{
+        display: none;
+    }
+
+    .icon{
+        display: flex;
+    }
+}
+
+@media (max-width: 367px) {
+    nav h2{
+        font-size: 1.3rem;
+    }
+}
+
+footer{
+    color: white;
+    background-color: rgb(7, 10, 35);
+    backdrop-filter: blur(10px);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card2{
+    width: 35%;
+    padding: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card2:hover{
+    border: 1px solid aqua;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card2 p{
+    font-size: 1rem;
+}
+
+.offers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

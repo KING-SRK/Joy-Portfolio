@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+nav h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+nav i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+nav h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+nav img {
+  width: 100px;
+}
+
+.line {
+  width: 70px;
+  height: 2px;
+  background-color: red;
+}
+
+#content {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#left {
+  width: 35%;
+  height: 100%;
+  padding: 100px 50px;
+}
+
+#right {
+  width: 35%;
+  height: 100%;
+  padding: 250px 100px;
+}
+
+#center {
+  width: 26%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+#left h1 {
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+#left h1 span {
+  color: red;
+  font-weight: 500;
+}
+
+#left p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  width: 70%;
+  line-height: 22px;
+}
+
+#left button {
+  background-color: red;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+#left button i {
+  margin-right: 5px;
+}
+
+.center-bg {
+  height: 90%;
+  width: 100%;
+  background-color: aqua;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  background-image: url(https://c0.wallpaperflare.com/preview/85/135/782/coca-cola-led-signage-thumbnail.jpg);
+  background-size: 350%;
+  background-position: 30% 40%;
+  filter: blur(2px);
+}
+
+#content > img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#right-elems {
+  width: 350px;
+}
+
+.elem1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 1px solid #fff;
+  opacity: 0.6;
+}
+
+.elem1 h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.elem1 i {
+  font-size: 24px;
+}
+
+.elem2 h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.elem2 p {
+  font-size: 12px;
+  width: 80%;
+  opacity: 0.6;
+}
