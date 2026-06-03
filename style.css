@@ -177,6 +177,11 @@ span {
   font-size: 4.5rem;
 }
 
+.about-content {
+  border-left: #0ef 0.2rem solid;
+  padding: 2rem;
+}
+
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
